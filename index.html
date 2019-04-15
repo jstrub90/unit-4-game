@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fish Collector</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/crystal-2.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fish Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/crystal-2.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header id="header-wrapper" class="clearfix">
+  <header id="header-wrapper" class="clearfix">
     <div class="container-fluid but-fixed">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center mt-5">
-                <h1 class="main-title">Fish Collector Game</h1>
-                <p><a class="game-info-trigger" href="#" data-toggle="modal" data-target="#game-info">How to Play?</a></p>
-                <!-- Modal -->
-                <div class="modal fade" id="game-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Game Instructions</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>At the start of the game you will be given a random number of fish to collect.</p>
-                                <p>There are four fish below that complete the Florida inshore fishing slam! By clicking on a fish you will add a specific number to your collection.</p>
-                                <p>Match the total number of points you collect to what is needed to get a slam, go over and you get skunked!</p>
-                                <p>The value of each fish is hidden from you until you click on it.</p>
-                                <p>Each time the game starts, the values of each fish below changes.</p>
-                                <p>Help these anglers achieve their goal of completing the inshore slam! <strong >Tight Lines!</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center mt-5">
+          <h1 class="main-title">Fish Collector Game</h1>
         </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center mt-5">
+          <h3>How to win:</h3>
+          <p>At the start of the game you will be given a random number of fish to collect.</p>
+          <p>There are four fish below that complete the Florida inshore fishing slam! By clicking on a fish you will
+            add a specific number to your collection.</p>
+          <p>Match the total number of points you collect to what is needed to get a slam, go over and you get skunked!
+          </p>
+          <p>The value of each fish is hidden from you until you click on it.</p>
+          <p>Each time the game starts, the values of each fish below changes.</p>
+          <p>Help these anglers achieve their goal of completing the inshore slam! <strong>Tight Lines!</strong></p>
+        </div>
+      </div>
     </div>
-</header>
-<main>
+  </header>
+  <main>
     <div class="container-fluid but-fixed">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center mt-2">
-                <div class="d-flex justify-content-center">
-                    <div class="number-col">
-                        <h3 class="h6 main-title">Catches</h3>
-                        <div class="target-number number-box"></div>
-                    </div>
-                    <div class="number-col">
-                        <h3 class="h6 main-title">Bites</h3>
-                        <div class="your-number number-box"></div>
-                    </div>
-                </div>
-                <p class="game-stats">
-                    <span class="game-status">Slams: <span class="win-count">0</span></span>
-                    <span class="game-status">Skunks: <span class="loss-count">0</span></span>
-                </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center mt-2">
+          <div class="d-flex justify-content-center">
+            <div class="number-col">
+              <h3 class="h6 main-title">Catches</h3>
+              <div class="target-number number-box"></div>
             </div>
-            <div class="col-md-8 col-lg-6 text-center mt-3">
-                <div class="row fish-container text-center justify-content-center"></div>
+            <div class="number-col">
+              <h3 class="h6 main-title">Bites</h3>
+              <div class="your-number number-box"></div>
             </div>
+          </div>
+          <p class="game-stats">
+            <span class="game-status">Slams: <span class="win-count">0</span></span>
+            <span class="game-status">Skunks: <span class="loss-count">0</span></span>
+          </p>
         </div>
+        <div class="col-md-8 col-lg-6 text-center mt-3">
+          <div class="row fish-container text-center justify-content-center"></div>
+        </div>
+      </div>
     </div>
-</main>
+  </main>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-<script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>
