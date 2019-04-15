@@ -1,0 +1,73 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  font-family: 'Roboto Slab', 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+  background: #2A2054;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+.container {
+  max-width: 1200px;
+}
+.container-fluid.but-fixed {
+  max-width: 1230px;
+}
+.game-info-trigger {
+  font-size: 1.2em;
+  color: inherit;
+}
+.game-info-trigger:hover {
+  color: inherit;
+}
+#game-info .modal-content {
+  color: #555;
+  text-align: left;
+  font-family: 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+.number-col {
+  margin: 0 20px;
+}
+.number-box {
+  margin: 10px auto;
+  width: 120px;
+  padding: 15px 30px;
+  font-size: 2em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.game-stats {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+.game-status {
+  display: inline-block;
+  margin: 0 20px;
+}
+.win-count, .loss-count {
+  display: inline-block;
+  min-width: 30px;
+  padding: 0 5px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  border-radius: 3px;
+}
+.crystal-col {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.crystal-col img {
+  width: 100%;
+  max-width: 80px;
+  transition: transform ease-in-out .2s;
+  cursor: pointer;
+}
+.crystal-col img:hover {
+  transform: scale(1.3);
+}
