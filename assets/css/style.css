@@ -3,7 +3,6 @@ html {
   position: relative;
 }
 body {
-  font-family: 'Roboto Slab', 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   color: #fff;
   background-image: url(../images/flats.jpg);
@@ -28,7 +27,6 @@ body {
 #game-info .modal-content {
   color: #555;
   text-align: left;
-  font-family: 'Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
 }
 .number-col {
   margin: 0 20px;

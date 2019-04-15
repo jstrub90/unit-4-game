@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
+    <title>Fish Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/crystal-2.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:300,400,700">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
 <body>
@@ -18,24 +17,25 @@
     <div class="container-fluid but-fixed">
         <div class="row justify-content-center">
             <div class="col-lg-10 text-center mt-5">
-                <h1 class="main-title">Crystal Collector Game</h1>
+                <h1 class="main-title">Fish Collector Game</h1>
                 <p><a class="game-info-trigger" href="#" data-toggle="modal" data-target="#game-info">How to Play?</a></p>
                 <!-- Modal -->
                 <div class="modal fade" id="game-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Game Mechanics</h5>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Game Instructions</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>At the start of the game you will be given a random number of crystals to collect.</p>
-                                <p>There are four crystals below. By clicking on a crystal you will add a specific number to your collection.</p>
-                                <p>You win the game by matching the total number of crystals you collected to what is needed, go over the number of needed crystals and you lose.</p>
-                                <p>The value of each crystal is hidden from you until you click on it.</p>
-                                <p>Each time the game starts, the values of each crystal below changes.</p>
+                                <p>At the start of the game you will be given a random number of fish to collect.</p>
+                                <p>There are four fish below that complete the Florida inshore fishing slam! By clicking on a fish you will add a specific number to your collection.</p>
+                                <p>Match the total number of points you collect to what is needed to get a slam, go over and you get skunked!</p>
+                                <p>The value of each fish is hidden from you until you click on it.</p>
+                                <p>Each time the game starts, the values of each fish below changes.</p>
+                                <p>Help these anglers achieve their goal of completing the inshore slam! <strong >Tight Lines!</strong></p>
                             </div>
                         </div>
                     </div>
@@ -50,17 +50,17 @@
             <div class="col-lg-10 text-center mt-2">
                 <div class="d-flex justify-content-center">
                     <div class="number-col">
-                        <h3 class="h6 main-title">Needed</h3>
+                        <h3 class="h6 main-title">Catches</h3>
                         <div class="target-number number-box"></div>
                     </div>
                     <div class="number-col">
-                        <h3 class="h6 main-title">Collected</h3>
+                        <h3 class="h6 main-title">Bites</h3>
                         <div class="your-number number-box"></div>
                     </div>
                 </div>
                 <p class="game-stats">
-                    <span class="game-status">Wins: <span class="win-count">0</span></span>
-                    <span class="game-status">Losses: <span class="loss-count">0</span></span>
+                    <span class="game-status">Slams: <span class="win-count">0</span></span>
+                    <span class="game-status">Skunks: <span class="loss-count">0</span></span>
                 </p>
             </div>
             <div class="col-md-8 col-lg-6 text-center mt-3">
